@@ -24,16 +24,6 @@ def my_find2(collection)
   nu_array
 end
 
-#def my_find2(collection)
-#  nu_array = []
-#  i = 0
-#  while i < collection.length
-#    if yield(collection[i])           # more complicated
-#      nu_array.push(collection[i])    # but this will work also
-#    end
-#    i = i + 1
-#  end
-#  nu_array
-#end
+
 
 puts my_find2(collection) {|i| i % 3 == 0 and i % 5 == 0 }
